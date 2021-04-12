@@ -585,6 +585,9 @@ async def download_video(v_url):
             ],
             "outtmpl": "%(id)s.%(ext)s",
             "quiet": True,
+            "force-ipv4": True,
+            "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+            "proxy": "",
             "logtostderr": False,
             "external_downloader": "aria2c",
         }
@@ -604,6 +607,9 @@ async def download_video(v_url):
             "outtmpl": "%(id)s.%(ext)s",
             "logtostderr": False,
             "quiet": True,
+            "force-ipv4": True,
+            "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+            "proxy": "",
             "external_downloader": "aria2c",
         }
         video = True
